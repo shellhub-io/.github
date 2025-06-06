@@ -95,54 +95,6 @@ To self-host ShellHub on your own servers and managing your own infrastructure
 If you prefer to use the cloud hosted service where we manage everything for your ease
 and convenience, create a free account in [ShellHub Cloud](https://cloud.shellhub.io).
 
-## Contributing
-
-ShellHub is an open source project and we love to receive contributions from
-our community. If you would like to contribute, please read
-our [contributing guide](CONTRIBUTING.md).
-
-## Getting Help
-
-You are welcome to submit any questions, participate in discussions and request
-help with any issue in our [Gitter Channel](https://gitter.im/shellhub-io/community).
-
-## License
-
-ShellHub is licensed under the Apache License, Version 2.0.
-See [LICENSE](LICENSE.md) for the full license text.
-
-## Development Environment Setup
-
-First of all, you'll need to generate required keys for the services:
-
-```
-$ make keygen
-```
-
-Set the environment to development:
-
-```
-$ echo "SHELLHUB_ENV=development" >> .env.override
-```
-
-Start the whole environment:
-
-```
-$ make start
-```
-
-> Avoid to use `docker-compose` directly (unless you know what you're doing); instead use `bin/docker-compose` wrapper.
-
-Wait for all services to be ready then create initial user by running:
-
-```
-$ ./bin/cli user create <username> <password> <email>
-```
-
-```
-$ ./bin/cli namespace create <namespace> <owner> 00000000-0000-4000-0000-000000000000
-```
-
 > Don't change the value of `00000000-0000-4000-0000-000000000000` (the TenantID), this value is hardcoded during agent initialization in development mode.
 
 When you open ShellHub UI for the first time, be sure to accept pending device.
