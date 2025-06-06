@@ -94,13 +94,3 @@ To self-host ShellHub on your own servers and managing your own infrastructure
 
 If you prefer to use the cloud hosted service where we manage everything for your ease
 and convenience, create a free account in [ShellHub Cloud](https://cloud.shellhub.io).
-
-> Don't change the value of `00000000-0000-4000-0000-000000000000` (the TenantID), this value is hardcoded during agent initialization in development mode.
-
-When you open ShellHub UI for the first time, be sure to accept pending device.
-
-See the [devscripts which can be useful for development](./devscripts).
-
-## Authors
-
-ShellHub was created by [O.S. Systems](https://www.ossystems.com.br).
